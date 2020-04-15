@@ -1,0 +1,21 @@
+_______________________________
+recursivo
+
+(deffuncion recur (?a ?b)
+(bind ?c (+ ?a ?b))
+(printout t ?c crlf)
+(bind ?a ?b)
+(bind ?b ?c)
+)
+
+(deffunction figonacci (?n)
+(bind ?a 0)
+(bind ?b 1)
+(printout t ?a crlf)
+(printout t ?b crlf)
+
+)
+
+_______________________________
+
+(printout t (figonacci 7) crlf)

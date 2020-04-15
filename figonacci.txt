@@ -1,0 +1,16 @@
+(deffunction figonacci (?n)
+(bind ?a 0)
+(bind ?b 1)
+(printout t ?a crlf)
+(printout t ?b crlf)
+(loop-for-count(?i 1 (- ?n 2))
+(bind ?c (+ ?a ?b))
+(printout t ?c crlf)
+(bind ?a ?b)
+(bind ?b ?c)
+)
+)
+
+_______________________________
+
+(printout t (figonacci 7) crlf)
